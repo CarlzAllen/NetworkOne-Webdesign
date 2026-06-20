@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Information Forum | NetworkOne</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css?family=Epilogue:wght@400;700;900&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 
+                        "brand-green": "#83BD52", 
+                        "brand-blue": "#1C84BE", 
+                        "surface-light": "#F8F9FA", 
+                        "text-main": "#2D3142" 
+                    },
+                    fontFamily: { 
+                        "headline": ["Epilogue", "sans-serif"], 
+                        "body": ["Manrope", "sans-serif"] 
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface-light font-body text-text-main antialiased flex flex-col min-h-screen">
+
+    <header class="w-full border-b border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+            <a href="index.html" class="flex items-center">
+                <img src="NetworkOne_LOGO.png" alt="NetworkOne" class="h-10 w-auto object-contain">
+            </a>
+            <nav id="desktop-nav" class="hidden md:flex items-center gap-1 h-full font-bold text-sm">
+                <a href="index.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Home</a>
+                <a href="about.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">About Us</a>
+                <a href="partners.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Clients & Partners</a>
+                <a href="services.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Services</a>
+                <a href="ict-forum.html" class="text-brand-green border-b-2 border-brand-green h-full flex items-center px-4">ICT Forum</a>
+                <a href="service-ticket.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Service Ticket</a>
+                <a href="events.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Events</a>
+                <a href="contact.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Contact</a>
+            </nav>
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="contact.html" class="px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="py-20 bg-white">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h1 class="text-3xl font-black font-headline text-gray-900 tracking-tight">ICT Information Forum</h1>
+                    <p class="text-gray-500 mt-2 text-sm">Collaborative technical discussions, systems framework releases, and infrastructural knowledge bases.</p>
+                    <div class="w-12 h-1 bg-brand-green mx-auto mt-4 rounded"></div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:border-brand-blue transition-all">
+                        <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Infrastructure Engineering</span>
+                        <h3 class="text-lg font-bold text-gray-900 mt-1">Multi-tier Structural Framework Audits For Corporate Subnets</h3>
+                        <p class="text-gray-500 text-xs mt-2 leading-relaxed">System updates relating to standard multi-tier infrastructure framework metrics across Nassau networks...</p>
+                    </div>
+
+                    <div class="p-6 bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:border-brand-blue transition-all">
+                        <span class="text-xs font-bold text-brand-green uppercase tracking-wider">Telecom Design</span>
+                        <h3 class="text-lg font-bold text-gray-900 mt-1">High-Performance Core Signal Matrix Protocols</h3>
+                        <p class="text-gray-500 text-xs mt-2 leading-relaxed">Discussions surrounding upcoming deployment schedules for localized telecom architecture configurations...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-950 text-gray-400 text-sm border-t border-gray-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <img src="NetworkOne_LOGO.png" alt="NetworkOne Logo" class="h-7 w-auto brightness-0 invert opacity-70">
+                <p class="text-xs text-gray-500 leading-relaxed">&copy; 2026 NetworkOne. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

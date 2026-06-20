@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Ticket & Complaints | NetworkOne</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css?family=Epilogue:wght@400;700;900&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 
+                        "brand-green": "#83BD52", 
+                        "brand-blue": "#1C84BE", 
+                        "surface-light": "#F8F9FA", 
+                        "text-main": "#2D3142" 
+                    },
+                    fontFamily: { 
+                        "headline": ["Epilogue", "sans-serif"], 
+                        "body": ["Manrope", "sans-serif"] 
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface-light font-body text-text-main antialiased flex flex-col min-h-screen">
+
+    <header class="w-full border-b border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+            <a href="index.html" class="flex items-center">
+                <img src="NetworkOne_LOGO.png" alt="NetworkOne" class="h-10 w-auto object-contain">
+            </a>
+            <nav id="desktop-nav" class="hidden md:flex items-center gap-1 h-full font-bold text-sm">
+                <a href="index.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Home</a>
+                <a href="about.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">About Us</a>
+                <a href="partners.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Clients & Partners</a>
+                <a href="services.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Services</a>
+                <a href="ict-forum.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">ICT Forum</a>
+                <a href="service-ticket.html" class="text-brand-green border-b-2 border-brand-green h-full flex items-center px-4">Service Ticket</a>
+                <a href="events.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Events</a>
+                <a href="contact.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Contact</a>
+            </nav>
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="contact.html" class="px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex flex-col justify-center items-center py-20 px-6 bg-white">
+        <div class="max-w-2xl w-full text-center space-y-6">
+            <h1 class="text-4xl font-black font-headline text-gray-900 tracking-tight">Customer Support & Service Tickets</h1>
+            <p class="text-gray-500 text-base leading-relaxed">
+                Are you experiencing technical glitches, network infrastructure difficulties, or framework delivery discrepancies? Open an official corporate grievance or technical assistance request directly with our auditing panel.
+            </p>
+            <div class="w-12 h-1 bg-brand-green mx-auto rounded"></div>
+            
+            <div class="pt-6">
+                <button id="open-form-btn" class="px-8 py-4 bg-brand-blue text-white font-black text-base rounded-xl shadow-md hover:bg-opacity-90 active:scale-95 transition-all duration-150">
+                    Open Service Ticket Form
+                </button>
+            </div>
+        </div>
+
+        <div id="form-modal" class="fixed inset-0 z-50 overflow-y-auto hidden bg-gray-950/60 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300">
+            <div class="bg-white w-full max-w-lg rounded-2xl border border-gray-200 shadow-2xl relative p-8 transform scale-95 transition-transform duration-300 space-y-6">
+                
+                <button id="close-form-btn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+
+                <div>
+                    <h3 class="text-2xl font-black font-headline text-gray-900">File a Formal Service Complaint</h3>
+                    <p class="text-xs text-gray-400 mt-1">Multi-tier internal technology routing framework tier-1 triage response.</p>
+                </div>
+
+                <form action="#" class="space-y-4" onsubmit="event.preventDefault(); alert('Ticket Submitted Successfully.');">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 uppercase tracking-wider mb-2">Full Name / Corporate Entity</label>
+                        <input type="text" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 uppercase tracking-wider mb-2">Contact Email Address</label>
+                        <input type="email" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 uppercase tracking-wider mb-2">Nature of Issue / Infrastructure Core</label>
+                        <select class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all">
+                            <option>Telecom Systems & Design Inaccuracies</option>
+                            <option>Structural System Engineering Delays</option>
+                            <option>Multi-Tier Auditing Profile Issues</option>
+                            <option>General Support System Grievance</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 uppercase tracking-wider mb-2">Detailed Description of Complaint</label>
+                        <textarea rows="4" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none transition-all resize-none" placeholder="Provide framework details..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all uppercase tracking-wider">
+                        Submit Priority Ticket
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-950 text-gray-400 text-sm border-t border-gray-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <img src="NetworkOne_LOGO.png" alt="NetworkOne Logo" class="h-7 w-auto brightness-0 invert opacity-70">
+                <p class="text-xs text-gray-500 leading-relaxed">&copy; 2026 NetworkOne. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const modal = document.getElementById('form-modal');
+        const openBtn = document.getElementById('open-form-btn');
+        const closeBtn = document.getElementById('close-form-btn');
+
+        openBtn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+            setTimeout(() => modal.classList.remove('opacity-0'), 10);
+        });
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+    </script>
+</body>
+</html>
